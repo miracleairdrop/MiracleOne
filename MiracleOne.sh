@@ -104,25 +104,25 @@ clear
 while true; do
     clear
 
-    echo "======================================================================================"
-    echo " One Bot For All"
+    echo " ======================================================================================"
+    echo "  One Bot For All"
     echo ""
-    echo " ███    ███ ██ ██████   █████   ██████ ██      ███████      ██████  ███    ██ ███████ "
-    echo " ████  ████ ██ ██   ██ ██   ██ ██      ██      ██          ██    ██ ████   ██ ██      "
-    echo " ██ ████ ██ ██ ██████  ███████ ██      ██      █████       ██    ██ ██ ██  ██ █████   "
-    echo " ██  ██  ██ ██ ██   ██ ██   ██ ██      ██      ██          ██    ██ ██  ██ ██ ██      "
-    echo " ██      ██ ██ ██   ██ ██   ██  ██████ ███████ ███████      ██████  ██   ████ ███████ "
+    echo "  ███    ███ ██ ██████   █████   ██████ ██      ███████      ██████  ███    ██ ███████ "
+    echo "  ████  ████ ██ ██   ██ ██   ██ ██      ██      ██          ██    ██ ████   ██ ██      "
+    echo "  ██ ████ ██ ██ ██████  ███████ ██      ██      █████       ██    ██ ██ ██  ██ █████   "
+    echo "  ██  ██  ██ ██ ██   ██ ██   ██ ██      ██      ██          ██    ██ ██  ██ ██ ██      "
+    echo "  ██      ██ ██ ██   ██ ██   ██  ██████ ███████ ███████      ██████  ██   ████ ███████ "
     echo "                                                                          - Mainnet -"
-    echo "======================================================================================"
+    echo " ======================================================================================"
     echo ""
-    echo "VPS Setup "
-    echo "1. Verus Miner (CPU Worker)"
-    echo "2. Monero Miner (UpComing)"
-    echo "3. Raven Miner (UpComing)"
-    echo "4. Zhash Miner (UpComing)"
-    echo "0. Exit"
-    echo "=================================="
-    read -p "Select an option: " choice
+    echo " VPS Setup "
+    echo " 1. Verus Miner (CPU Worker)"
+    echo " 2. Monero Miner (UpComing)"
+    echo " 3. Raven Miner (UpComing)"
+    echo " 4. Zhash Miner (UpComing)"
+    echo " 0. Exit"
+    echo " =================================="
+    read -p " Pilih menu diatas: " choice
 
     case $choice in
         1) start_verus ;;
@@ -130,8 +130,8 @@ while true; do
         3) echo "Ini masih kami kerjakan, tunggu update selanjutnya" ;;
         4) echo "Ini masih kami kerjakan, tunggu update selanjutnya" ;;
         0) echo "Goodbye!"; exit 0 ;;
-        *) echo "Invalid option. Try again." ;;
+        *) echo "Pilihan Salah. Coba lagi." ;;
     esac
     echo ""
-    read -p "Press [Enter] to return to menu..."
+    read -p "Tekan [Enter] untuk kembali ke menu..."
 done
