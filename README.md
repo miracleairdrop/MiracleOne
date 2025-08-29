@@ -1,2 +1,25 @@
 # MiracleOne
-🌍 MiracleOne Miner – Satu Bot untuk Semua Koin 🚀  MiracleOne Miner adalah bot open-source yang saya bagikan gratis di GitHub. Bot ini dirancang untuk melakukan mining berbagai macam koin dan token mainnet hanya dengan satu bot, sehingga memudahkan pengguna tanpa perlu repot menggunakan banyak software. 
+🌍 Satu Bot untuk Semua Koin 🚀  
+
+MiracleOne adalah bot open-source yang kami bagikan gratis di GitHub. Bot ini dirancang untuk melakukan mining berbagai macam koin dan token mainnet hanya dengan satu bot, sehingga memudahkan pengguna tanpa perlu repot menggunakan banyak software. 
+
+## Keuntungan
+- Sangat Ringan
+- Sangat Mudah
+- Banyak Jenis Blockchain
+- Setting Jumlah core/thread yang digunakan
+
+## Versi
+MiracleOne-Mainnet
+[Linux](https://github.com/miracleairdrop) | [Windows](https://github.com/miracleairdrop)
+MiracleOne-Testnet (ComingSoon)
+
+<br><br><br>
+🔥 Mohon dukungan agar Miracle Airdrop semakin berkembang, like dan gabung ke channel kami, sebarkan dan undang teman anda, Terima kasih !
+## 🌐 Komunitas Miracle Airdrop
+Gabung dan ikuti info terbaru:
+- 💬 [Telegram](https://t.me/miracleairdrops)
+- 🎮 [Facebook](https://facebook.com/miracleairdrop)
+- 🐦 [X / Twitter](https://x.com/miracle_forum)
+- ▶️ [Youtube](https://www.youtube.com/@miracle_airdrop)
+- 🐙 [Github](https://github.com/miracleairdrop)
