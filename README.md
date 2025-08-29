@@ -9,10 +9,28 @@ MiracleOne adalah bot open-source yang kami bagikan gratis di GitHub. Bot ini di
 - Banyak Jenis Blockchain
 - Setting Jumlah core/thread yang digunakan
 
-## Versi
-MiracleOne-Mainnet
+### Versi
+MiracleOne - Mainnet  
+[Linux](https://github.com/miracleairdrop)  
+  
+MiracleOne - Testnet (ComingSoon)  
 [Linux](https://github.com/miracleairdrop) | [Windows](https://github.com/miracleairdrop)
-MiracleOne-Testnet (ComingSoon)
+
+
+## Linux
+#### 1. Download & Install
+```bash
+git clone https://github.com/miracleairdrop/MiracleOne.git
+cd MiracleOne
+chmod +x MiracleOne.sh
+```
+#### 2. Jalankan MiracleOne:
+```bash
+./MiracleOne.sh
+```
+
+Selesai, kalian tinggal ikuti instruksi yang ada di terminal kalian
+Semua lengkap dengan panduan dalam skrip berbahasa indonesia, Happy Mining !!!
 
 <br><br><br>
 🔥 Mohon dukungan agar Miracle Airdrop semakin berkembang, like dan gabung ke channel kami, sebarkan dan undang teman anda, Terima kasih !
