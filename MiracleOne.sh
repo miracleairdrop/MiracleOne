@@ -1,6 +1,11 @@
 #!/bin/bash
 cd "$(dirname "$0")"
 
+if [ ! -f /var/log/first_run_done ]; then
+    apt update && apt upgrade -y
+    touch /var/log/first_run_done
+fi
+
 if [[ $EUID -ne 0 ]]; then
    echo "[!] This script must be run as root"
    exit 1
@@ -11,7 +16,7 @@ check_libhwloc() {
         echo "[✓] libhwloc.so.15 already installed"
     else
         echo "[*] libhwloc.so.15 not found, installing required libraries..."
-        apt update && apt install -y libhwloc15 libhwloc-dev libuv1 libssl1.1 || apt install -y libssl3
+        apt install -y libhwloc15 libhwloc-dev libuv1 libssl1.1 || apt install -y libssl3
     fi
 }
 check_libhwloc
@@ -26,11 +31,29 @@ fi
 
 check_container
 
-#apt update
-#apt upgrade -y
-#apt install -y build-essential pkg-config libssl-dev git-all screen cmake
-chmod +x ./verus/p.sh
+if ! dpkg -s build-essential >/dev/null 2>&1; then
+    apt install -y build-essential
+fi
 
+if ! dpkg -s pkg-config >/dev/null 2>&1; then
+    apt install -y pkg-config
+fi
+
+if ! dpkg -s libssl-dev >/dev/null 2>&1; then
+    apt install -y libssl-dev
+fi
+
+if ! dpkg -s git >/dev/null 2>&1; then
+    apt install -y git-all
+fi
+
+if ! dpkg -s screen >/dev/null 2>&1; then
+    apt install -y screen
+fi
+
+if ! dpkg -s cmake >/dev/null 2>&1; then
+    apt install -y cmake
+fi
 
 start_verus() {
     if pgrep -f "hellminer" > /dev/null; then
@@ -81,13 +104,16 @@ clear
 while true; do
     clear
 
-    echo "============================"
-    echo "|     ╦╔═┌─┐ ┬┬   ╦╔═╗     |"
-    echo "|     ╠╩╗├─┤ ││   ║╠═╝     |"
-    echo "|     ╩ ╩┴ ┴└┘┴  ╚╝╩       |"
-    echo "============================"
-    echo "                           mainnet"
-    echo "=================================="
+    echo "======================================================================================"
+    echo " One Bot For All"
+    echo ""
+    echo " ███    ███ ██ ██████   █████   ██████ ██      ███████      ██████  ███    ██ ███████ "
+    echo " ████  ████ ██ ██   ██ ██   ██ ██      ██      ██          ██    ██ ████   ██ ██      "
+    echo " ██ ████ ██ ██ ██████  ███████ ██      ██      █████       ██    ██ ██ ██  ██ █████   "
+    echo " ██  ██  ██ ██ ██   ██ ██   ██ ██      ██      ██          ██    ██ ██  ██ ██ ██      "
+    echo " ██      ██ ██ ██   ██ ██   ██  ██████ ███████ ███████      ██████  ██   ████ ███████ "
+    echo "                                                                          - Mainnet -"
+    echo "======================================================================================"
     echo ""
     echo "VPS Setup "
     echo "1. Verus Miner (CPU Worker)"
