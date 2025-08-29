@@ -29,7 +29,8 @@ chmod +x MiracleOne.sh
 ./MiracleOne.sh
 ```
 
-Selesai, kalian tinggal ikuti instruksi yang ada di terminal kalian
+![1](assets/Screenshot_142.png)  
+Selesai, kalian tinggal ikuti instruksi yang ada di terminal kalian !!  
 Semua lengkap dengan panduan dalam skrip berbahasa indonesia, Happy Mining !!!
 
 <br><br><br>
