@@ -22,11 +22,10 @@ MiracleOne - Testnet (ComingSoon)
 ```bash
 git clone https://github.com/miracleairdrop/MiracleOne.git
 cd MiracleOne
-chmod +x MiracleOne.sh
 ```
 #### 2. Jalankan MiracleOne:
 ```bash
-./MiracleOne.sh
+./MiracleOne
 ```
 
 ![1](assets/Screenshot_142.png)  
